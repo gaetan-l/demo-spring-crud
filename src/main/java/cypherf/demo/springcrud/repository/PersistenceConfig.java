@@ -22,7 +22,7 @@ public class PersistenceConfig {
      * This function returns a TransactionManager bean, it is mandatory and
      * must be named "transactionManager", or be defined in the
      * &#064;EnableJpaRepositories annotation,
-     * i.e. @EnableJpaRepositories(transactionManagerRef="myCustomNameTxManager")
+     * e.g. &#064;EnableJpaRepositories(transactionManagerRef="myCustomNameTxManager")
      * Cf. EnableJpaRepositories.transactionManagerRef()
      */
     @Bean

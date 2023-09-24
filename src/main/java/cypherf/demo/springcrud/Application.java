@@ -14,9 +14,16 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Optional;
 
-// Scans for @Bean, @Component, @Controller, @Service, and @Repository ; by default (with no parameter) scans in the current package + sub-packages
+/**
+ * &#064;ComponentScan scans for &#064;Bean, &#064;Component, &#064;Controller,
+ * &#064;Service, and &#064;Repository. by default (with no parameter) it scans
+ * in the current package + sub-packages.
+ * <p>
+ * &#064;EnableJpaRepositories is needed to check for Repositories inheriting
+ * from Spring Data interfaces, i.e. extending CrudRepository.
+ * Cf. MessageRepository
+ */
 @ComponentScan
-// Used to create repository classes from Spring Data interfaces, i.e. extending CrudRepository, Cf. MessageRepository
 @EnableJpaRepositories
 public class Application {
 	@Autowired
