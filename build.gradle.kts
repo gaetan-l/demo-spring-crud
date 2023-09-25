@@ -27,6 +27,7 @@ dependencies {
 
     // Testing
     testImplementation("org.junit.jupiter:junit-jupiter:5.9.2")
+    testImplementation("org.springframework:spring-test:6.0.12")
 }
 
 tasks.test {

@@ -1,13 +1,14 @@
 package cypherf.demo.springcrud.repository;
 
 import cypherf.demo.springcrud.model.Message;
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.repository.ListCrudRepository;
+import org.springframework.lang.NonNull;
 
 import java.util.List;
 
 /**
- * Extension of CrudRepository for a specific domain clas, will be implemented
- * by SimpleJpaRepository.
+ * Extension of (List)CrudRepository for a specific domain class, will be
+ * implemented by SimpleJpaRepository.
  * <p>
  * No code needed for basic CRUD operation as they are all implemented in
  * SimpleJpaRepository.
@@ -22,11 +23,11 @@ import java.util.List;
  * Cf. PersistenceConfig.transactionManager()
  * Cf. <a href="https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#transactions">...</a>
  */
-public interface MessageRepository extends CrudRepository<Message, Long> {
+public interface MessageRepository extends ListCrudRepository<Message, Long> {
     /**
      * Specific functions can be added (not implemented) using the names of the
      * domain class members
      * Cf. <a href="https://spring.io/guides/gs/accessing-data-jpa/#_create_simple_queries">...</a>
      */
-    List<Message> findByText(String text);
+    @NonNull List<Message> findByText(@NonNull String text);
 }

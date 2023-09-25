@@ -107,16 +107,19 @@ public class Application {
 		messageRepository.deleteById(idSeven);
 		printAllMessages();
 
+		// DELETE ALL
 		List<Message> messageGroup = Arrays.asList(messageSix, messageFive);
 		logger.debug("deleting messages " + messageGroup);
 		messageRepository.deleteAll(messageGroup);
 		printAllMessages();
 
+		// DELETE ALL BY ID
 		List<Long> idGroup = Arrays.asList(messageFour.getId(), messageThree.getId());
 		logger.debug("deleting messages with ids " + idGroup);
 		messageRepository.deleteAllById(idGroup);
 		printAllMessages();
 
+		// FIND BY TEXT
 		logger.debug("finding all messages by text '" + messageOne.getText() + "'");
 		messageRepository.findByText(messageOne.getText()).forEach(m -> {
 			logger.debug("Message: " + m.toString());

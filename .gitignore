@@ -49,3 +49,5 @@ gradle/
 gradlew
 gradlew.bat
 settings.gradle.kts
+spring.mv.db
+spring.trace.db

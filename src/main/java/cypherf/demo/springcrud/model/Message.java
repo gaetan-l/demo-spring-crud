@@ -14,7 +14,7 @@ public class Message {
 	@GeneratedValue
 	private long id;
 
-	@Column(unique = true)
+	@Column(unique = true, nullable = false)
 	private String text;
 
 	@Deprecated
