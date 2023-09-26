@@ -13,12 +13,12 @@ import java.util.List;
  * No code needed for basic CRUD operation as they are all implemented in
  * SimpleJpaRepository.
  * <p>
- * &#064;Repository annotation is not needed, I'm guessing MessageRepository is
- * detected thanks to extending CrudRepository + @EnableJpaRepository in main
- * application class.
+ * {@literal @}Repository annotation is not needed, I'm guessing
+ * MessageRepository is detected thanks to extending CrudRepository +
+ * {@literal @} EnableJpaRepository in main application class.
  * <p>
- * &#064;Transactional  annotation is not needed, by default, methods inherited
- * from CrudRepository inherit the transactional configuration from
+ * {@literal @}Transactional  annotation is not needed, by default, methods
+ * inherited from CrudRepository inherit the transactional configuration from
  * SimpleJpaRepository. Note that there is still need for a TransactionManager,
  * Cf. PersistenceConfig.transactionManager()
  * Cf. <a href="https://docs.spring.io/spring-data/jpa/docs/current/reference/html/#transactions">...</a>

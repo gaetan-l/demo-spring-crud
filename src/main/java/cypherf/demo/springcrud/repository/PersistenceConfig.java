@@ -10,8 +10,8 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.transaction.PlatformTransactionManager;
 
 /**
- * &#064;EnableTransactionManagement  not needed, by default, methods inherited
- * from CrudRepository inherit the transactional configuration from
+ * {@literal @}EnableTransactionManagement  not needed, by default, methods
+ * inherited from CrudRepository inherit the transactional configuration from
  * SimpleJpaRepository.
  */
 @Configuration
@@ -21,8 +21,8 @@ public class PersistenceConfig {
     /**
      * This function returns a TransactionManager bean, it is mandatory and
      * must be named "transactionManager", or be defined in the
-     * &#064;EnableJpaRepositories annotation,
-     * e.g. &#064;EnableJpaRepositories(transactionManagerRef="myCustomNameTxManager")
+     * {@literal @}EnableJpaRepositories annotation,
+     * e.g. {@literal @}EnableJpaRepositories(transactionManagerRef="myCustomNameTxManager")
      * Cf. EnableJpaRepositories.transactionManagerRef()
      */
     @Bean
@@ -33,7 +33,7 @@ public class PersistenceConfig {
     /**
      * This function returns an EntityManagerFactory bean, it is mandatory and
      * must be named "entityManagerFactory", or be defined in the
-     * &#064;EnableJpaRepositories annotation,
+     * {@literal @}EnableJpaRepositories annotation,
      * i.e. @EnableJpaRepositories(entityManagerFactory="myCustomNameEmf")
      * Cf. EnableJpaRepositories.entityManagerFactoryRef()
      */

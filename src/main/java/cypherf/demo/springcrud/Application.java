@@ -15,11 +15,11 @@ import java.util.List;
 import java.util.Optional;
 
 /**
- * &#064;ComponentScan scans for &#064;Bean, &#064;Component, &#064;Controller,
- * &#064;Service, and &#064;Repository. by default (with no parameter) it scans
- * in the current package + sub-packages.
+ * {@literal @}ComponentScan scans for {@literal @}Bean, {@literal @}Component,
+ * {@literal @}Controller, {@literal @}Service, and {@literal @}Repository. By
+ * default, (with no parameter) it scans in the current package + sub-packages.
  * <p>
- * &#064;EnableJpaRepositories is needed to check for Repositories inheriting
+ * {@literal @}EnableJpaRepositories is needed to check for Repositories inheriting
  * from Spring Data interfaces, i.e. extending CrudRepository.
  * Cf. MessageRepository
  */
