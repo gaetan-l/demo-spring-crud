@@ -43,10 +43,17 @@ public class MessageService {
         return messageRepository.findAll();
     }
 
-    public @NonNull Message updateMessage(Message messageToUpdate) {
-        long id = messageToUpdate.getId();
-        Optional<Message> read = messageRepository.findById(id);
+    public @NonNull Message update(@NonNull Message messageToUpdate) {
+        final long id = messageToUpdate.getId();
+        final Optional<Message> read = messageRepository.findById(id);
         if (read.isEmpty()) throw new jakarta.persistence.EntityNotFoundException(String.format("Message with id '%d' doesn't exist", id));
         return messageRepository.save(messageToUpdate);
+    }
+
+    public void delete(@NonNull Message messageToDelete) {
+        final long id = messageToDelete.getId();
+        final Optional<Message> read = messageRepository.findById(id);
+        if (read.isEmpty()) throw new jakarta.persistence.EntityNotFoundException(String.format("Message with id '%d' doesn't exist", id));
+        messageRepository.deleteById(id);
     }
 }
