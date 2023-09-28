@@ -1,17 +1,19 @@
-# Spring bootless persistence
+# Minimal persistence demo with Spring (without Boot)
 
-Basic persistence tutorial for beginners, using Spring but not Boot and minimal dependencies.
+Minimal code to demonstrate persistence using Spring witout Boot and minimal dependencies.
 
-- Java language
-- Spring framework
-- Gradle for dependency management
-- Dependencies:
-  - JPA
-  - Hibernate
-  - H2
-  - Log4j
-  - JUnit
-  - Spring test
+- Java 20
+- [IntelliJ Idea 2023.2.2 Community Edition](https://www.jetbrains.com/idea/download/)
+- Gradle 8.3 (Version 8.3 is required to work with Java 20, by default, ItelliJ included version 8.2, to upgrade to 8.3, use the following command in a terminal: `.\gradlew wrapper --gradle-version 8.3`)
+- Dependencies
+  - [org.springframework.data:spring-data-jpa:3.1.4](https://mvnrepository.com/artifact/org.springframework.data/spring-data-jpa)
+  - [org.hibernate.orm:hibernate-community-dialects:6.3.0.Final](https://mvnrepository.com/artifact/org.hibernate.orm/hibernate-community-dialects)
+  - [org.hibernate:hibernate-entitymanager:5.6.15.Final](https://mvnrepository.com/artifact/org.hibernate/hibernate-entitymanager)
+  - [com.h2database:h2:2.2.224](https://mvnrepository.com/artifact/com.h2database/h2)
+  - [org.slf4j:slf4j-log4j12:2.0.9](https://mvnrepository.com/artifact/org.slf4j/slf4j-log4j12)
+  - [org.junit.jupiter:junit-jupiter:5.9.2](https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter)
+  - [org.springframework:spring-test:6.0.12](https://mvnrepository.com/artifact/org.springframework/spring-test)
+
 
 ## How to use
 
