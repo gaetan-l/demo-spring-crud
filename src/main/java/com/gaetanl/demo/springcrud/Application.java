@@ -1,7 +1,7 @@
-package cypherf.demo.springcrud;
+package com.gaetanl.demo.springcrud;
 
-import cypherf.demo.springcrud.model.Message;
-import cypherf.demo.springcrud.service.MessageService;
+import com.gaetanl.demo.springcrud.model.Message;
+import com.gaetanl.demo.springcrud.service.MessageService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;

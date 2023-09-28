@@ -1,4 +1,4 @@
-package cypherf.demo.springcrud.model;
+package com.gaetanl.demo.springcrud.model;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;

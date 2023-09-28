@@ -1,7 +1,7 @@
-package cypherf.demo.springcrud.service;
+package com.gaetanl.demo.springcrud.service;
 
-import cypherf.demo.springcrud.Application;
-import cypherf.demo.springcrud.model.Message;
+import com.gaetanl.demo.springcrud.Application;
+import com.gaetanl.demo.springcrud.model.Message;
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
 import org.junit.jupiter.api.Test;

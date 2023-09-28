@@ -1,7 +1,7 @@
-package cypherf.demo.springcrud.service;
+package com.gaetanl.demo.springcrud.service;
 
-import cypherf.demo.springcrud.model.Message;
-import cypherf.demo.springcrud.repository.MessageRepository;
+import com.gaetanl.demo.springcrud.repository.MessageRepository;
+import com.gaetanl.demo.springcrud.model.Message;
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.NonUniqueResultException;
 import org.springframework.beans.factory.annotation.Autowired;

@@ -2,7 +2,7 @@ plugins {
     id("java")
 }
 
-group = "com.cypherf"
+group = "com.gaetanl"
 version = "1.0-SNAPSHOT"
 
 repositories {

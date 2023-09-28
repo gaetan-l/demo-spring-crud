@@ -1,6 +1,6 @@
-package cypherf.demo.springcrud.repository;
+package com.gaetanl.demo.springcrud.repository;
 
-import cypherf.demo.springcrud.model.Message;
+import com.gaetanl.demo.springcrud.model.Message;
 import org.springframework.data.repository.ListCrudRepository;
 import org.springframework.lang.NonNull;
 

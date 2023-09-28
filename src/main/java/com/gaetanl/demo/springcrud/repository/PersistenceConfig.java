@@ -1,4 +1,4 @@
-package cypherf.demo.springcrud.repository;
+package com.gaetanl.demo.springcrud.repository;
 
 import jakarta.persistence.EntityManagerFactory;
 import org.hibernate.boot.MetadataSources;
